@@ -10,9 +10,9 @@ os: mac
 @ctx.action_class('user')
 class UserActions:
     def password_fill():
-        actions.key('cmd-\\')
+        actions.key('ctrl-shift-alt-/')
     def password_show():
-        actions.key('cmd-alt-\\')
+        actions.key('cmd-alt-/')
     def password_new():
         actions.key('cmd-i')
     def password_duplicate():

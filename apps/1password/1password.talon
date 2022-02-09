@@ -1,6 +1,6 @@
 app: one_password
 -
-password new: user.password_new()
-password dup: user.password_duplicate()
-password edit: user.password_edit()
-password delete: user.password_delete()
+pass new: user.password_new()
+pass dup: user.password_duplicate()
+pass edit: user.password_edit()
+pass delete: user.password_delete()

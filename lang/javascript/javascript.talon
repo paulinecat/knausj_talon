@@ -53,6 +53,12 @@ state reduce:
 
 state spread: "..."
 
+previous dear: "../"
+
 from import:
-    insert(' from  ""')
-    key("left")
+    insert(" from '';")
+    key(left left)
+
+console log:
+    insert("console.log();")
+    key(left left)

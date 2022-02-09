@@ -13,6 +13,7 @@ run last: user.terminal_run_last()
 rerun [<user.text>]: user.terminal_rerun_search(text or "")
 rerun search: user.terminal_rerun_search("")
 kill all: user.terminal_kill_all()
+previous dear: "../"
 
 copy paste:
     edit.copy()

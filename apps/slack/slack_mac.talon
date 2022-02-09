@@ -2,6 +2,9 @@ os: mac
 app: slack
 -
 tag(): user.messaging
+# Quick
+(view | you) all: key(cmd-shift-a)
+change status: key(cmd-shift-y)
 # Workspace
 workspace <number>: key("cmd-{number}")
 # Channel
@@ -49,5 +52,5 @@ bold: key(cmd-b)
 # Miscellaneous
 (slack | lack) shortcuts: key(cmd-/)
 emote <user.text>: "{text}"
-toggle left sidebar: key(cmd-shift-d)
-toggle right sidebar: key(cmd-.)
+toggle left side: key(cmd-shift-d)
+toggle right side: key(cmd-.)
