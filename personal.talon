@@ -18,3 +18,7 @@ print test sigh press: "npm run test:cypress"
 print test chassis: "npx chassis test --files src/client"
 print local: "olps"
 (Alfred | al bred): key(cmd-space)
+
+open code:
+  insert("vscr .")
+  key(enter)
