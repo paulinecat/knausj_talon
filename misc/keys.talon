@@ -13,7 +13,6 @@ key (alt | all): "alt"
 now quit: key(cmd-q)
 now deep (paste | pace): key(cmd-shift-v)
 now hide: key(cmd-m)
-now save: key(cmd-s)
 now close: key(cmd-w)
 now new tab: key(cmd-t)
 now new window: key(cmd-n)

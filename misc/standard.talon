@@ -21,7 +21,7 @@ now paste: edit.paste()
 now undo: edit.undo()
 now redo: edit.redo()
 now same paste: edit.paste_match_style()
-now file: edit.save()
+now (file | save): edit.save()
 wipe: key(backspace)
 (pad | padding):
 	insert("  ")
