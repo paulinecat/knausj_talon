@@ -69,6 +69,12 @@ class figma_actions:
     def figma_inspect_panel():
         """Open inspect panel"""
 
+    def figma_pan():
+        """Pan"""
+
+    def figma_pan_stop():
+        """Pan stop"""
+
     def figma_zoom_in():
         """Zoom in"""
 
@@ -234,8 +240,11 @@ class figma_actions:
     def figma_align_center_vertical():
         """Align center vertical"""
 
-    def figma_distribute_spacing():
-        """Distributes spacing"""
+    def figma_distribute_spacing_horizontal():
+        """Distributes spacing horizontal"""
+        
+    def figma_distribute_spacing_vertical():
+        """Distributes spacing vertical"""
 
     def figma_tidy_up():
         """Tidy up"""

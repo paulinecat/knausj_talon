@@ -11,9 +11,9 @@ os: windows
 @ctx.action_class('user')
 class UserActions:
     def password_fill():
-        actions.key('ctrl-\\\\')
+        actions.key('alt-/')
     def password_show():
-        actions.key('alt-ctrl-\\\\')
+        actions.key('ctrl-alt-/')
     def password_new():
         actions.key('ctrl-n')
     def password_duplicate():

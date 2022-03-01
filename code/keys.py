@@ -113,22 +113,26 @@ def letters(m) -> str:
 ctx = Context()
 modifier_keys = {
     "alt": "alt",
-    "command": "cmd",
-    "cam": "cmd",
     "control": "ctrl",
     "troll": "ctrl",
     "option": "alt",
     "shift": "shift",
-    "sky": "shift",
-    "super": "super",
-    "monkey": "shift-ctrl-alt",
-    "hippy": "shift-ctrl-alt-cmd",
-    "slippy": "shift-cmd",
-    "bongo": "cmd-shift-g",
+    "sky": "shift"
 }
 if app.platform  == "mac":
-    modifier_keys["command"] = "cmd"
     modifier_keys["option"] = "alt"
+    modifier_keys["command"] = "cmd"
+    modifier_keys["cam"] = "cmd"
+    modifier_keys["super"] = "super"
+    modifier_keys["monkey"] = "shift-ctrl-alt"
+    modifier_keys["hippy"] = "shift-ctrl-alt-cmd"
+    modifier_keys["slippy"] = "shift-cmd"
+    
+if app.platform  == "windows": 
+    modifier_keys["win"] = "win"
+    modifier_keys["when"] = "win"
+    modifier_keys["winky"] = "win"
+    
 ctx.lists["self.modifier_key"] = modifier_keys
 alphabet = dict(zip(default_alphabet, letters_string))
 ctx.lists["self.letter"] = alphabet
@@ -257,6 +261,10 @@ alternate_keys = {
 if app.platform in ("windows", "linux"):
     alternate_keys["menu key"] = "menu"
     alternate_keys["print screen"] = "printscr"
+    
+if app.platform == "windows":
+    alternate_keys["win"] = "win"
+    alternate_keys["now when"] = "win"
 
 special_keys = {k: k for k in simple_keys}
 special_keys.update(alternate_keys)

@@ -30,6 +30,14 @@ class UserActions:
     def figma_prototype_panel(): actions.key('alt-9')
     def figma_inspect_panel(): actions.key('alt-0')
 
+    def figma_pan(): 
+        ctrl.key_press('space', down=True)
+        ctrl.mouse_click(button=1, down=True)
+        ctrl.key_press('space', up=True)
+
+    def figma_pan_stop():
+        ctrl.mouse_click(button=1, up=True)
+
     def figma_zoom_in(): actions.key('ctrl-=')
     def figma_zoom_out(): actions.key('ctrl--')
     def figma_zoom_hundred(): actions.key('ctrl-0')
@@ -84,3 +92,24 @@ class UserActions:
     def figma_toggle_lock_selection(): actions.key('ctrl-shift-l')
     def figma_duplicate(): actions.key('ctrl-d')
     def figma_rename_selection(): actions.key('ctrl-r')
+   
+    def figma_bring_forward(): actions.key('ctrl-]')
+    def figma_send_backward(): actions.key('ctrl-[')
+    def figma_bring_to_front(): actions.key(']')
+    def figma_send_to_back(): actions.key('[')
+    def figma_align_left(): actions.key('alt-a')
+    def figma_align_right(): actions.key('alt-d')
+    def figma_align_top(): actions.key('alt-w')
+    def figma_align_bottom(): actions.key('alt-s')
+    def figma_align_center_horizontal(): actions.key('alt-h')
+    def figma_align_center_vertical(): actions.key('alt-v')
+    def figma_distribute_spacing_horizontal(): actions.key('alt-shift-h')
+    def figma_distribute_spacing_vertical(): actions.key('alt-shift-v')
+    def figma_tidy_up(): actions.key('ctrl-alt-shift-t')
+    def figma_auto_layout(): actions.key('shift-a')
+    def figma_remove_auto_layout(): actions.key('alt-shift-a')
+
+    def figma_create_component(): actions.key('ctrl-alt-k')
+    def figma_detach_instance(): actions.key('ctrl-alt-b')
+    def figma_insert_component(): actions.key('shift-i')
+    def figma_swap_instance(): actions.key('alt')  
